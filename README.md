@@ -26,29 +26,6 @@ API Documentation: Swashbuckle (Swagger)
 Patterns: Unit of Work, Repository
 Tools: Visual Studio 2022, SQL Server Management Studio
 
-Project Structure
-TaskManagementApi/
-├── Controllers/
-│   ├── TasksController.cs
-├── Data/
-│   ├── TaskDbContext.cs
-│   ├── Repositories/
-│   │   ├── ITaskRepository.cs
-│   │   ├── TaskRepository.cs
-│   ├── UnitOfWork/
-│   │   ├── IUnitOfWork.cs
-│   │   ├── UnitOfWork.cs
-├── Entities/
-│   ├── TaskItem.cs
-│   ├── Category.cs
-├── Models/
-│   ├── TaskDto.cs
-│   ├── CategoryDto.cs
-├── Validators/
-│   ├── TaskDtoValidator.cs
-├── Program.cs
-├── appsettings.json
-
 Prerequisites
 
 .NET 8 SDK
@@ -71,14 +48,6 @@ Update the connection string in appsettings.json:"ConnectionStrings": {
 
 
 Ensure SQL Server is running and accessible.
-
-
-Install Dependencies:
-
-Restore NuGet packages:dotnet restore
-
-
-
 
 Apply Migrations:
 
